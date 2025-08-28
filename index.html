@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Agro Precisión Sur - Soluciones de Datos para la Lechería</title>
+    <title>Algoritmo Animal - Automatización y Agricultura de Precisión</title> <!-- Update with your name/brand -->
     <!-- Chosen Palette: Warm Earth Tones -->
     <!-- Application Structure Plan: A single-page application (SPA) with a fixed navigation bar that smoothly scrolls to thematic sections (Inicio, Servicios, Sobre Mí, Casos de Éxito, Recursos, Contacto). This structure provides a fluid, modern user experience, allowing visitors to flow through the brand story without interruption. Key interactions include hover effects on service cards, a dynamic tab system for case studies, and a functional contact form. This design was chosen to build a personal brand narrative effectively and guide users logically from problem awareness to conversion (contact) within a single, engaging session. -->
     <!-- Visualization & Content Choices: Report Info: Service offerings -> Goal: Inform & Compare -> Viz/Presentation: Interactive cards with hover effects -> Interaction: Users hover to see more details -> Justification: Engaging and space-efficient way to present distinct services. | Report Info: Case Study -> Goal: Demonstrate Value -> Viz/Presentation: Tabbed content area -> Interaction: Users click tabs to switch between case studies -> Justification: Organizes detailed stories cleanly, preventing a long, cluttered page. | Report Info: Personal Bio -> Goal: Build Trust -> Viz/Presentation: Timeline layout with icons -> Interaction: Static visual flow -> Justification: Visually represents a professional journey effectively. Library/Method: All interactions are built with Vanilla JS and styled with Tailwind CSS. No SVG/Mermaid used. -->
@@ -50,11 +50,12 @@
     <!-- Header & Navigation -->
     <header id="header" class="bg-white/80 backdrop-blur-md shadow-sm sticky top-0 z-50">
         <nav class="container mx-auto px-6 py-4 flex justify-between items-center">
-            <a href="#inicio" class="text-2xl font-bold text-primary">AgroPrecisión Sur</a>
+            <a href="#inicio" class="text-2xl font-bold text-primary">Algoritmo Animal AiA</a>
             <div class="hidden md:flex items-center space-x-8">
                 <a href="#servicios" class="nav-link text-gray-600 border-b-2 border-transparent pb-1">Servicios</a>
                 <a href="#sobre-mi" class="nav-link text-gray-600 border-b-2 border-transparent pb-1">Sobre Mí</a>
-                <a href="#casos-exito" class="nav-link text-gray-600 border-b-2 border-transparent pb-1">Casos de Éxito</a>
+                <a href="#proyectos" class="nav-link text-gray-600 border-b-2 border-transparent pb-1">Proyectos</a> <!-- ⬅️ CAMBIAR AQUÍ -->
+                <a href="#casos-exito" class="nav-link text-gray-600 border-b-2 border-transparent pb-1">Casos de Éxito</a> <!-- ⬅️ CAMBIAR AQUÍ -->
                 <a href="#recursos" class="nav-link text-gray-600 border-b-2 border-transparent pb-1">Recursos</a>
                 <a href="#contacto" class="nav-link text-gray-600 border-b-2 border-transparent pb-1">Contacto</a>
             </div>
@@ -66,7 +67,8 @@
         <div id="mobile-menu" class="hidden md:hidden bg-white">
             <a href="#servicios" class="block text-center py-2 px-4 text-sm text-gray-700 hover:bg-gray-100">Servicios</a>
             <a href="#sobre-mi" class="block text-center py-2 px-4 text-sm text-gray-700 hover:bg-gray-100">Sobre Mí</a>
-            <a href="#casos-exito" class="block text-center py-2 px-4 text-sm text-gray-700 hover:bg-gray-100">Casos de Éxito</a>
+            <a href="#proyectos" class="block text-center py-2 px-4 text-sm text-gray-700 hover:bg-gray-100">Proyectos</a> <!-- ⬅️ CAMBIAR AQUÍ -->
+            <a href="#casos-exito" class="block text-center py-2 px-4 text-sm text-gray-700 hover:bg-gray-100">Casos de Éxito</a> <!-- ⬅️ CAMBIAR AQUÍ -->
             <a href="#recursos" class="block text-center py-2 px-4 text-sm text-gray-700 hover:bg-gray-100">Recursos</a>
             <a href="#contacto" class="block text-center py-2 px-4 text-sm text-gray-700 hover:bg-gray-100">Contacto</a>
         </div>
@@ -74,95 +76,239 @@
 
     <main>
         <!-- Section 1: Inicio -->
-        <section id="inicio" class="min-h-screen flex items-center bg-cover bg-center" style="background-image: linear-gradient(rgba(253, 251, 248, 0.8), rgba(253, 251, 248, 1)), url('https://images.unsplash.com/photo-1589923188900-85dae5236739?q=80&w=2070&auto=format&fit=crop');">
+        <section id="inicio" class="min-h-screen flex items-center bg-cover bg-center" style="background-image: linear-gradient(rgba(253, 251, 248, 0.8),
+         rgba(253, 251, 248, 0.8)), url('fondo.jpeg');">
             <div class="container mx-auto px-6 text-center">
-                <h1 class="text-4xl md:text-6xl font-bold text-secondary leading-tight mb-4">Más que Datos, Decisiones Rentables para su Predio.</h1>
-                <p class="text-lg md:text-xl text-gray-700 max-w-3xl mx-auto mb-8">Transformo los datos complejos de su lechería en información simple y práctica para mejorar la eficiencia, la salud animal y la rentabilidad de su negocio.</p>
-                <a href="#contacto" class="bg-primary text-white font-bold py-3 px-8 rounded-lg text-lg hover:bg-opacity-90 transition duration-300">Conversemos sobre su Predio</a>
-                <div class="mt-16 grid grid-cols-1 md:grid-cols-3 gap-8 max-w-4xl mx-auto">
+                <h1 class="text-4xl md:text-6xl font-bold text-secondary leading-tight mb-4">Los Datos no deben abrumar, deben ayudar.<br> Y mejorar la precisión.</span></h1>
+                <p class="text-lg md:text-xl text-black-700 max-w-3xl mx-auto mb-8">
+        <span class="font-bold">Simplificamos lo complejo</span>, los datos prediales al alcance de su mano. <span class="font-bold">Soluciones simples y prácticas</span> para ahorrar valioso tiempo. 
+        <br><span class="font-bold">Eficiencia</span> para el sistema.
+</p>
+
+                <a href="#contacto" class="bg-primary text-white font-bold py-3 px-8 rounded-lg text-lg hover:bg-opacity-90 transition duration-300">Conversemos si es útil...</a>
+
+                <div class="mt-16 grid grid-cols-1 md:grid-cols-5 gap-10 max-w-6xl mx-auto">
                     <div class="text-center">
                         <div class="text-4xl text-secondary mb-2">🕒</div>
-                        <h3 class="font-semibold text-lg">¿Pierde horas en planillas y reportes manuales?</h3>
+                        <h3 class="font-semibold text-lg">¿Excesivo tiempo en planillas o reportes manuales?</h3>
+                    </div>
+                    <div class="text-center">
+                        <div class="text-4xl text-secondary mb-2">🐄</div>
+                        <h3 class="font-semibold text-lg">¿La información llega muy justa o atrasada a los manejos?</h3>
                     </div>
                     <div class="text-center">
                         <div class="text-4xl text-secondary mb-2">📊</div>
-                        <h3 class="font-semibold text-lg">¿Acumula datos que no sabe cómo utilizar?</h3>
+                        <h3 class="font-semibold text-lg">¿Acumulas datos que no sabes cómo utilizar?</h3>
                     </div>
                     <div class="text-center">
-                        <div class="text-4xl text-secondary mb-2">🔔</div>
-                        <h3 class="font-semibold text-lg">¿Le cuesta detectar problemas a tiempo en su rebaño?</h3>
+                        <div class="text-4xl text-secondary mb-2">💻</div>
+                        <h3 class="font-semibold text-lg">¿Necesitas digitalización antes que la competencia?</h3>
+                    </div>
+                    <div class="text-center">
+                        <div class="text-4xl text-secondary mb-2">🌍</div>
+                        <h3 class="font-semibold text-lg">¿Quieres saber por donde empezar con la sustentabilidad?</h3>
                     </div>
                 </div>
             </div>
         </section>
 
-        <!-- Section 2: Servicios -->
-        <section id="servicios" class="py-20 bg-white">
-            <div class="container mx-auto px-6">
-                <div class="text-center mb-12">
-                    <h2 class="text-4xl font-bold text-primary">Soluciones para una Lechería Más Inteligente</h2>
-                    <p class="text-lg text-gray-600 mt-2">Cada servicio está diseñado para resolver un problema específico y generar un impacto tangible en su negocio.</p>
+<!-- Section 2: Servicios -->
+<section id="servicios" class="py-20 bg-white">
+    <div class="container mx-auto px-6">
+        <div class="text-center mb-12">
+            <h2 class="text-4xl font-bold text-primary">Soluciones para un rubro dinámico, con menos tiempo y más exigencias</h2>
+            <p class="text-lg text-gray-600 mt-2">Cada servicio está diseñado para <span class="font-semibold">resolver problemas específicos</span> que enfrentan productores y empresas de servicios <span class="font-semibold">del sector agropecuario.</span></p>
+        </div>
+        
+        <!-- Primera fila: 3 tarjetas -->
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mb-8">
+            <!-- Service Card 1 -->
+            <div class="service-card bg-gray-50 rounded-lg p-8 border border-gray-200">
+                <h3 class="text-2xl font-bold text-secondary mb-4">Monitoreo Lechero de Precisión</h3>
+                <p class="text-gray-600 mb-4">Para lecherías que buscan pragmatismo y eficiencia. Ahorre tiempo, reduzca errores y facilite el éxito de los manejos.</p>
+                <ul class="text-blue-600 space-y-2">
+                    <li class="flex items-center"><span class="text-primary mr-2">✓</span>Menos esfuerzo y más tiempo para otras tareas</li>
+                    <li class="flex items-center"><span class="text-primary mr-2">✓</span>Más práctico: decisiones más rápidas y precisas</li>
+                    <li class="flex items-center"><span class="text-primary mr-2">✓</span>Mejor seguimiento y más autonomía</li>
+                </ul>
+            </div>
+            
+            <!-- Service Card 2 -->
+            <div class="service-card bg-gray-50 rounded-lg p-8 border border-gray-200">
+                <h3 class="text-2xl font-bold text-secondary mb-4">Asesorías en Certificación de Sustentabilidad</h3>
+                <p class="text-gray-600 mb-4">Para empresas que quieren conocer el uso de recursos y/o prepararse para futuras normativas y exigencias.</p>
+                <ul class="text-blue-600 space-y-2">
+                    <li class="flex items-center"><span class="text-primary mr-2">✓</span>Diagnóstico y plan de acción</li>
+                    <li class="flex items-center"><span class="text-primary mr-2">✓</span>Gestión de registros</li>
+                    <li class="flex items-center"><span class="text-primary mr-2">✓</span>Implementación de mejoras</li>
+                </ul>
+            </div>
+            
+            <!-- Service Card 3 -->
+            <div class="service-card bg-gray-50 rounded-lg p-8 border border-gray-200">
+                <h3 class="text-2xl font-bold text-secondary mb-4">Automatización de Reportes a Medida</h3>
+                <p class="text-gray-600 mb-4">Para PYMES de servicios, cooperativas o predios con desafíos de datos muy específicos e integración de sistemas complejos o análisis históricos.</p>
+                <ul class="text-blue-600 space-y-2">
+                    <li class="flex items-center"><span class="text-primary mr-2">✓</span>Soluciones 100% personalizadas</li>
+                    <li class="flex items-center"><span class="text-primary mr-2">✓</span>Reducción en jornadas y tiempos de entrega</li>
+                    <li class="flex items-center"><span class="text-primary mr-2">✓</span>Simplificación de procesos</li>
+                </ul>
+            </div>
+        </div>
+        
+        <!-- Segunda fila: 2 tarjetas centradas -->
+        <div class="flex justify-center">
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-4xl">
+                <!-- Service Card 4 -->
+                <div class="service-card bg-gray-50 rounded-lg p-8 border border-gray-200">
+                    <h3 class="text-2xl font-bold text-secondary mb-4">Análisis genómicos y de genealogía</h3>
+                    <p class="text-gray-600 mb-4">Esquemas para la selección o asignación dirigida de hembras de forma temprana en base a datos o biotecnología.</p>
+                    <ul class="text-blue-600 space-y-2">
+                        <li class="flex items-center"><span class="text-primary mr-2">✓</span>Plan y análisis PCR leche A2 (beta-caseína)</li>
+                        <li class="flex items-center"><span class="text-primary mr-2">✓</span>Plan y análisis PCR Kappa-caseína (BB)</li>
+                        <li class="flex items-center"><span class="text-primary mr-2">✓</span>Estudios de genealogía cruzado con PCR</li>
+                    </ul>
                 </div>
-                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-                    <!-- Service Card 1 -->
-                    <div class="service-card bg-gray-50 rounded-lg p-8 border border-gray-200">
-                        <h3 class="text-2xl font-bold text-secondary mb-4">Plataforma "Control Lechero"</h3>
-                        <p class="text-gray-600 mb-4">Para productores lecheros (100-999 vacas) que buscan eficiencia y claridad. Ahorre tiempo, reduzca errores y facilite el cumplimiento de normativas (PABCO).</p>
-                        <ul class="text-gray-600 space-y-2">
-                            <li class="flex items-center"><span class="text-primary mr-2">✓</span>Más tiempo para el campo</li>
-                            <li class="flex items-center"><span class="text-primary mr-2">✓</span>Decisiones más rápidas y seguras</li>
-                            <li class="flex items-center"><span class="text-primary mr-2">✓</span>Mayor rentabilidad</li>
-                        </ul>
-                    </div>
-                    <!-- Service Card 2 -->
-                    <div class="service-card bg-gray-50 rounded-lg p-8 border border-gray-200">
-                        <h3 class="text-2xl font-bold text-secondary mb-4">Asesorías en Eficiencia</h3>
-                        <p class="text-gray-600 mb-4">Para productores que quieren optimizar el uso de recursos o prepararse para futuras normativas (GEI) y certificaciones de sostenibilidad.</p>
-                         <ul class="text-gray-600 space-y-2">
-                            <li class="flex items-center"><span class="text-primary mr-2">✓</span>Reducción de costos</li>
-                            <li class="flex items-center"><span class="text-primary mr-2">✓</span>Mejora de la huella ambiental</li>
-                            <li class="flex items-center"><span class="text-primary mr-2">✓</span>Acceso a nuevos mercados</li>
-                        </ul>
-                    </div>
-                    <!-- Service Card 3 -->
-                    <div class="service-card bg-gray-50 rounded-lg p-8 border border-gray-200">
-                        <h3 class="text-2xl font-bold text-secondary mb-4">Análisis de Datos a Medida</h3>
-                        <p class="text-gray-600 mb-4">Para PYMES de servicios, cooperativas o predios con desafíos de datos muy específicos, como integración de sistemas complejos o análisis históricos.</p>
-                         <ul class="text-gray-600 space-y-2">
-                            <li class="flex items-center"><span class="text-primary mr-2">✓</span>Soluciones 100% personalizadas</li>
-                            <li class="flex items-center"><span class="text-primary mr-2">✓</span>Máximo aprovechamiento de su data</li>
-                            <li class="flex items-center"><span class="text-primary mr-2">✓</span>Desarrollo de modelos predictivos</li>
-                        </ul>
-                    </div>
+                
+                <!-- Service Card 5 -->
+                <div class="service-card bg-gray-50 rounded-lg p-8 border border-gray-200">
+                    <h3 class="text-2xl font-bold text-secondary mb-4">Consultoría en Transformación Digital</h3>
+                    <p class="text-gray-600 mb-4">Para empresas que buscan adoptar nuevas tecnologías y mejorar su competitividad.</p>
+                    <ul class="text-blue-600 space-y-2">
+                        <li class="flex items-center"><span class="text-primary mr-2">✓</span>Evaluación de necesidades tecnológicas</li>
+                        <li class="flex items-center"><span class="text-primary mr-2">✓</span>Implementación de soluciones digitales</li>
+                        <li class="flex items-center"><span class="text-primary mr-2">✓</span>Capacitación y soporte en softwares</li>
+                    </ul>
                 </div>
             </div>
-        </section>
+        </div>
+    </div>
+</section>
 
         <!-- Section 3: Sobre Mí -->
         <section id="sobre-mi" class="py-20">
-            <div class="container mx-auto px-6">
+            <div class="container mx-auto px-10">
                 <div class="flex flex-col md:flex-row items-center gap-12">
                     <div class="md:w-1/3 text-center">
-                        <img src="https://images.unsplash.com/photo-1593104547489-5cfb3839a3b5?q=80&w=2053&auto=format&fit=crop" alt="Foto de [Tu Nombre]" class="rounded-full w-64 h-64 mx-auto object-cover shadow-lg">
-                        <h3 class="text-3xl font-bold text-primary mt-6">[Tu Nombre]</h3>
-                        <p class="text-secondary font-semibold">Ingeniero Agrícola & Magíster en Data Science</p>
+                        <img src="mf_oficina.jpeg" alt="Foto de Marcos Andrés Fernández" class="rounded-full w-64 h-65 mx-auto object-cover shadow-lg">
+                        <h3 class="text-3xl font-bold text-primary mt-6">Marcos Andrés Fernández</h3>
+                        <p class="text-secondary font-semibold"> <b>Ingeniero Agrícola & Msc. en Data Science (USS) <br> Dipl. en Cambio Climático Silvoagropecuario (UACh) <br>Dipl. en Digitalización y gestión de empresas (UACh) <br>Auditor Sello Sustentabilidad (Consorcio Lechero)</b></p>
                     </div>
                     <div class="md:w-2/3">
-                        <h2 class="text-4xl font-bold text-primary mb-6">Mi Misión: Unir el Campo con la Tecnología</h2>
-                        <p class="text-lg text-gray-700 mb-4">Mi pasión por el campo del sur de Chile es donde todo comienza. Como Ingeniero Agrícola, viví en terreno los desafíos de la gestión diaria. Pero mi curiosidad por la tecnología me llevó a especializarme con un Magíster en Data Science. Hoy, mi misión es unir estos dos mundos, la tradición y la innovación, para ofrecer soluciones tecnológicas que sean realmente prácticas y útiles para el agricultor.</p>
-                        <p class="text-lg text-gray-700 font-semibold text-secondary">"Simplificar la tecnología para que cada productor del sur de Chile pueda tomar decisiones más inteligentes, mejorar su rentabilidad y asegurar la sostenibilidad de su negocio para las futuras generaciones."</p>
+                        <h2 class="text-4xl font-bold text-primary mb-6">Mi misión: <br>Unir el Campo con la Tecnología</h2>
+                        <p class="text-lg text-gray-700 mb-4">Mi pasión fue cultivada por mis abuelos. Como Ingeniero Agrícola, viví en terreno los desafíos de la gestión diaria. Pero mi curiosidad por la tecnología me llevó a especializarme en Data Science. Hoy, mis esfuerzos están en unir estos dos mundos, la tradición y la innovación, para ofrecer soluciones tecnológicas que sean realmente prácticas y útiles para el sector, todo con foco en la sostenibilidad.</p>
+                        <p class="text-lg text-gray-700 font-semibold text-secondary">"Simplificar la tecnología para ser aplicable al campo. Usar los datos e integrarlos para tomar decisiones rápidas, inteligentes y precisas. Mejorando la eficiencia al reducir los esfuerzos diarios para producir leche."</p>
                     </div>
                 </div>
             </div>
         </section>
 
-        <!-- Section 4: Casos de Éxito -->
+        <!-- Section 4: Proyectos (NUEVA SECCIÓN) -->
+        <section id="proyectos" class="py-20 bg-gray-50">
+            <div class="container mx-auto px-6">
+                <div class="text-center mb-12">
+                    <h2 class="text-4xl font-bold text-primary">Galería de Proyectos</h2>
+                    <p class="text-lg text-gray-600 mt-2">Conozca algunos de los proyectos adjudicados y en marcha de la empresa.</p>
+                </div>
+
+                <!-- MOVER TODO EL CARRUSEL AQUÍ -->
+                <div class="mb-12">
+                    <div class="relative max-w-5xl mx-auto">
+                        <!-- Contenedor del carrusel -->
+                        <div id="carousel" class="relative overflow-hidden rounded-lg shadow-lg">
+                            <div id="carousel-track" class="flex transition-transform duration-500 ease-in-out">
+                                
+                                <!-- Slide 1 -->
+                                <div class="w-full flex-shrink-0 relative">
+                                    <img src="plataforma.png" alt="Monitoreo Lechero" class="w-full h-96 object-cover">
+                                    <div class="absolute inset-0 bg-black bg-opacity-20 flex items-end">
+                                        <div class="text-white p-6">
+                                            <h4 class="text-xl font-bold">Plataforma Monitoreo Lechero</h4>
+                                            <p class="text-sm font-bold">Análisis y Reportes para monitoreo del rebaño</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                
+                                <!-- Slide 2 -->
+                                <div class="w-full flex-shrink-0 relative">
+                                    <img src="sala ordeña.HEIC" alt="Certificación Sustentabilidad" class="w-full h-96 object-cover">
+                                    <div class="absolute inset-0 bg-black bg-opacity-20 flex items-end">
+                                        <div class="text-white p-6">
+                                            <h4 class="text-xl font-bold">Certificación de Sustentabilidad</h4>
+                                            <p class="text-sm font-bold">Diagnóstico y plan de mejora en prácticas sostenibles</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                
+                                <!-- Slide 3 -->
+                                <div class="w-full flex-shrink-0 relative">
+                                    <img src="automatizacion.png" alt="Automatización de procesos" class="w-full h-96 object-cover">
+                                    <div class="absolute inset-0 bg-black bg-opacity-20 flex items-end">
+                                        <div class="text-white p-6">
+                                            <h4 class="text-xl font-bold">Automatización de procesos</h4>
+                                            <p class="text-sm font-bold">Generación automática de informes personalizados</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                
+                                <!-- Slide 4 -->
+                                <div class="w-full flex-shrink-0 relative">
+                                    <img src="lab.jpeg" alt="Análisis genómico" class="w-full h-96 object-cover">
+                                    <div class="absolute inset-0 bg-black bg-opacity-20 flex items-end">
+                                        <div class="text-white p-6">
+                                            <h4 class="text-xl font-bold">Análisis Genómico y Genealogía</h4>
+                                            <p class="text-sm font-bold">Selección por biotecnología o datos</p>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- Slide 5 -->
+                                <div class="w-full flex-shrink-0 relative">
+                                    <img src="charla.jpeg" alt="Digitalización de Procesos" class="w-full h-96 object-contain">
+                                    <div class="absolute inset-0 bg-black bg-opacity-20 flex items-end">
+                                        <div class="text-white p-6">
+                                            <h4 class="text-xl font-bold">Digitalización de Procesos</h4>
+                                            <p class="text-sm font-bold">Optimización y automatización de flujos de trabajo</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                
+                        <!-- Botones de navegación -->
+                        <button id="prev-btn" class="absolute left-4 top-1/2 transform -translate-y-1/2 bg-white bg-opacity-80 hover:bg-opacity-100 text-gray-800 p-2 rounded-full shadow-lg transition">
+                            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7"></path>
+                            </svg>
+                        </button>
+                        <button id="next-btn" class="absolute right-4 top-1/2 transform -translate-y-1/2 bg-white bg-opacity-80 hover:bg-opacity-100 text-gray-800 p-2 rounded-full shadow-lg transition">
+                            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path>
+                            </svg>
+                        </button>
+                        
+                        <!-- Indicadores -->
+                        <div class="flex justify-center mt-4 space-x-2">
+                            <button class="carousel-indicator w-3 h-3 rounded-full bg-primary" data-slide="0"></button>
+                            <button class="carousel-indicator w-3 h-3 rounded-full bg-gray-300" data-slide="1"></button>
+                            <button class="carousel-indicator w-3 h-3 rounded-full bg-gray-300" data-slide="2"></button>
+                            <button class="carousel-indicator w-3 h-3 rounded-full bg-gray-300" data-slide="3"></button>
+                            <button class="carousel-indicator w-3 h-3 rounded-full bg-gray-300" data-slide="4"></button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section 5: Casos de Éxito (SOLO PESTAÑAS) -->
         <section id="casos-exito" class="py-20 bg-white">
             <div class="container mx-auto px-6">
                 <div class="text-center mb-12">
                     <h2 class="text-4xl font-bold text-primary">Resultados Tangibles</h2>
                     <p class="text-lg text-gray-600 mt-2">Así es como mis soluciones han impactado a empresas como la suya.</p>
                 </div>
+
+                <!-- SOLO LAS PESTAÑAS DE CASOS DE ÉXITO -->
                 <div class="max-w-4xl mx-auto">
                     <div class="border-b border-gray-200">
                         <nav class="-mb-px flex space-x-8" aria-label="Tabs">
@@ -192,14 +338,14 @@
                                     </div>
                                 </div>
                                 <div class="mt-6 border-t border-gray-200 pt-6">
-                                    <p class="text-gray-700 italic">"Gracias a [Tu Nombre], ahora entendemos nuestros datos y hemos mejorado drásticamente la satisfacción de nuestros clientes."</p>
+                                    <p class="text-gray-700 italic">"Gracias a Marcos, ahora entendemos nuestros datos y hemos mejorado drásticamente la satisfacción de nuestros clientes."</p>
                                     <p class="text-right font-semibold text-secondary mt-2">- Gerente de Operaciones</p>
                                 </div>
                             </div>
                         </div>
                         <!-- Tab Content 2 -->
                         <div id="caso2" class="tab-pane hidden">
-                             <div class="bg-gray-50 p-8 rounded-lg border border-gray-200 text-center">
+                            <div class="bg-gray-50 p-8 rounded-lg border border-gray-200 text-center">
                                 <h3 class="text-2xl font-bold text-secondary mb-2">Próximamente</h3>
                                 <p class="text-gray-600">Estamos documentando nuevos casos de éxito. ¡Vuelva pronto!</p>
                             </div>
@@ -209,11 +355,12 @@
             </div>
         </section>
 
-        <!-- Section 5: Recursos -->
+        <!-- Section 6: Recursos -->
         <section id="recursos" class="py-20">
             <div class="container mx-auto px-6 text-center">
                 <h2 class="text-4xl font-bold text-primary">Recursos y Conocimiento</h2>
-                <p class="text-lg text-gray-600 mt-2 max-w-2xl mx-auto">Mi objetivo es compartir conocimiento práctico. Explore algunos artículos o descargue mi checklist gratuito.</p>
+
+                <p class="text-lg text-gray-600 mt-2 max-w-2xl mx-auto">Mi objetivo es compartir conocimiento práctico. Revise algunos artículos o descargue mi checklist gratuito.</p>
                 <div class="grid grid-cols-1 md:grid-cols-3 gap-8 mt-12 max-w-5xl mx-auto">
                     <div class="bg-white p-6 rounded-lg shadow-md text-left">
                         <h4 class="font-bold text-secondary text-lg mb-2">5 Indicadores Clave en su Lechería</h4>
@@ -242,24 +389,30 @@
             </div>
         </section>
 
-        <!-- Section 6: Contacto -->
+        <!-- Section 7: Contacto -->
         <section id="contacto" class="py-20 bg-white">
             <div class="container mx-auto px-6">
                 <div class="text-center mb-12">
-                    <h2 class="text-4xl font-bold text-primary">Conversemos</h2>
-                    <p class="text-lg text-gray-600 mt-2 max-w-2xl mx-auto">Hablemos sin compromiso sobre los desafíos y oportunidades de su predio. Estoy aquí para ayudar.</p>
+                    <h2 class="text-4xl font-bold text-primary">Conversemos sin compromiso</h2>
+                    <p class="text-lg text-gray-600 mt-2 max-w-2xl mx-auto">Las preguntas no tienen costo. Primero hay que hablar de lo que se puede y no se puede hacer. La idea es aportar sinceramente.</p>
                 </div>
-                <div class="max-w-3xl mx-auto flex flex-col md:flex-row gap-8">
+                <div class="max-w-3xl mx-auto flex flex-col md:flex-row gap-10">
                     <div class="md:w-1/2 bg-gray-50 p-8 rounded-lg border border-gray-200">
                         <h3 class="text-xl font-bold text-secondary mb-4">Información de Contacto</h3>
-                        <p class="text-gray-700 mb-2"><strong>Email:</strong> tu.email@agroprecisionsur.cl</p>
-                        <p class="text-gray-700 mb-2"><strong>Teléfono/WhatsApp:</strong> +56 9 XXXX XXXX</p>
-                        <p class="text-gray-700"><strong>Ubicación:</strong> Valdivia, Región de Los Ríos, Chile</p>
+                        <p class="text-gray-700 mb-2"><strong>Email:</strong><br> algoritmoanimalayaspa@gmail.com</p>
+                        <p class="text-gray-700 mb-2"><strong>Teléfono/WhatsApp:</strong><br><span class="whitespace-nowrap">+56 9 3029390</span></p>
+                        <p class="text-gray-700 mb-2"><strong>Redes sociales:</strong><br><a href="https://www.linkedin.com/in/marcos-andres-fernandez/" target="_blank" rel="noopener noreferrer" class="text-primary hover:text-secondary underline">https://www.linkedin.com/in/marcos-andres-fernandez/</a></p>
+                        <p class="text-gray-700 mb-2"><strong>Ubicación geográfica:</strong><br> Valdivia, Región de Los Ríos, Chile</p>
+                        <p class="text-gray-700 mb-2"><strong>Trabajos:</strong><br> Zona Sur de Chile</p>
+                        <p class="text-gray-700 mb-2"><strong>Proyectos Tesis Msc: <br> Detección de mastitis por sensores</strong><br>
+                            <a href="https://lnkd.in/ed-UFnTZ" target="_blank" rel="noopener noreferrer" class="text-primary hover:text-secondary underline">https://lnkd.in/ed-UFnTZ</a>
+                        </p>
+                        <p class="text-gray-700"><strong>Disponibilidad:</strong><br> Remoto y Presencial</p>
                     </div>
                     <div class="md:w-1/2">
                         <form id="contact-form">
                             <div class="mb-4">
-                                <label for="name" class="block text-gray-700 font-semibold mb-2">Nombre</label>
+                                <label for="name" class="block text-gray-700 font-semibold mb-2">Nombre y Apellido</label>
                                 <input type="text" id="name" name="name" class="w-full p-3 border border-gray-300 rounded-md" required>
                             </div>
                             <div class="mb-4">
@@ -281,106 +434,173 @@
 
     <footer class="bg-gray-800 text-white py-8">
         <div class="container mx-auto px-6 text-center">
-            <p>&copy; 2025 AgroPrecisión Sur. Todos los derechos reservados.</p>
-            <p class="text-sm text-gray-400 mt-1">Diseñado para potenciar la lechería del sur de Chile.</p>
+            <p>&copy; 2025 Algoritmo Animal AiA. Todos los derechos reservados.</p>
+            <p class="text-sm text-gray-400 mt-1">Diseñado para ayudar al sector lechero del sur de Chile.</p>
         </div>
     </footer>
 
     <script>
-        document.addEventListener('DOMContentLoaded', function() {
-            // Mobile menu toggle
-            const mobileMenuButton = document.getElementById('mobile-menu-button');
-            const mobileMenu = document.getElementById('mobile-menu');
-            mobileMenuButton.addEventListener('click', () => {
-                mobileMenu.classList.toggle('hidden');
-            });
-
-            // Close mobile menu when a link is clicked
-            document.querySelectorAll('#mobile-menu a').forEach(link => {
-                link.addEventListener('click', () => {
-                    mobileMenu.classList.add('hidden');
-                });
-            });
-
-            // Smooth scrolling for navigation links
-            document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-                anchor.addEventListener('click', function (e) {
-                    e.preventDefault();
-                    const targetId = this.getAttribute('href');
-                    const targetElement = document.querySelector(targetId);
-                    if (targetElement) {
-                        // Offset for fixed header
-                        const headerOffset = document.getElementById('header').offsetHeight;
-                        const elementPosition = targetElement.getBoundingClientRect().top;
-                        const offsetPosition = elementPosition + window.pageYOffset - headerOffset;
-
-                        window.scrollTo({
-                            top: offsetPosition,
-                            behavior: "smooth"
-                        });
-                    }
-                });
-            });
-
-            // Active nav link highlighting on scroll
-            const sections = document.querySelectorAll('section');
-            const navLinks = document.querySelectorAll('.nav-link');
-            window.addEventListener('scroll', () => {
-                let current = '';
-                const headerOffset = document.getElementById('header').offsetHeight;
-                sections.forEach(section => {
-                    const sectionTop = section.offsetTop - headerOffset - 50; // Adjusted offset
-                    if (pageYOffset >= sectionTop) {
-                        current = section.getAttribute('id');
-                    }
+            document.addEventListener('DOMContentLoaded', function() {
+                // Mobile menu toggle
+                const mobileMenuButton = document.getElementById('mobile-menu-button');
+                const mobileMenu = document.getElementById('mobile-menu');
+                mobileMenuButton.addEventListener('click', () => {
+                    mobileMenu.classList.toggle('hidden');
                 });
 
-                navLinks.forEach(link => {
-                    link.classList.remove('active');
-                    if (link.getAttribute('href').includes(current)) {
-                        link.classList.add('active');
-                    }
+                // Close mobile menu when a link is clicked
+                document.querySelectorAll('#mobile-menu a').forEach(link => {
+                    link.addEventListener('click', () => {
+                        mobileMenu.classList.add('hidden');
+                    });
                 });
-            });
 
-            // Case Study Tabs
-            const tabs = document.querySelectorAll('.tab');
-            const tabPanes = document.querySelectorAll('.tab-pane');
-            tabs.forEach(tab => {
-                tab.addEventListener('click', () => {
-                    const target = tab.getAttribute('data-tab');
-                    
-                    tabs.forEach(t => t.classList.remove('active'));
-                    tab.classList.add('active');
-                    
-                    tabPanes.forEach(pane => {
-                        if (pane.id === target) {
-                            pane.classList.remove('hidden');
-                            pane.classList.add('active');
-                        } else {
-                            pane.classList.add('hidden');
-                            pane.classList.remove('active');
+                // Smooth scrolling for navigation links
+                document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+                    anchor.addEventListener('click', function (e) {
+                        e.preventDefault();
+                        const targetId = this.getAttribute('href');
+                        const targetElement = document.querySelector(targetId);
+                        if (targetElement) {
+                            // Offset for fixed header
+                            const headerOffset = document.getElementById('header').offsetHeight;
+                            const elementPosition = targetElement.getBoundingClientRect().top;
+                            const offsetPosition = elementPosition + window.pageYOffset - headerOffset;
+
+                            window.scrollTo({
+                                top: offsetPosition,
+                                behavior: "smooth"
+                            });
                         }
                     });
                 });
-            });
 
-            // Contact Form Submission
-            const contactForm = document.getElementById('contact-form');
-            const formMessage = document.getElementById('form-message');
-            contactForm.addEventListener('submit', function(e) {
-                e.preventDefault();
-                formMessage.textContent = 'Enviando mensaje...';
-                formMessage.className = 'text-blue-600';
+                // Active nav link highlighting on scroll
+                const sections = document.querySelectorAll('section');
+                const navLinks = document.querySelectorAll('.nav-link');
+                window.addEventListener('scroll', () => {
+                    let current = '';
+                    const headerOffset = document.getElementById('header').offsetHeight;
+                    sections.forEach(section => {
+                        const sectionTop = section.offsetTop - headerOffset - 50; // Adjusted offset
+                        if (pageYOffset >= sectionTop) {
+                            current = section.getAttribute('id');
+                        }
+                    });
 
-                // Simulate form submission
-                setTimeout(() => {
-                    formMessage.textContent = '¡Gracias por su mensaje! Me pondré en contacto con usted pronto.';
-                    formMessage.className = 'text-green-600 font-semibold';
-                    contactForm.reset();
-                }, 1500);
+                    navLinks.forEach(link => {
+                        link.classList.remove('active');
+                        if (link.getAttribute('href').includes(current)) {
+                            link.classList.add('active');
+                        }
+                    });
+                });
+
+                // Case Study Tabs
+                const tabs = document.querySelectorAll('.tab');
+                const tabPanes = document.querySelectorAll('.tab-pane');
+                tabs.forEach(tab => {
+                    tab.addEventListener('click', () => {
+                        const target = tab.getAttribute('data-tab');
+                        
+                        tabs.forEach(t => t.classList.remove('active'));
+                        tab.classList.add('active');
+                        
+                        tabPanes.forEach(pane => {
+                            if (pane.id === target) {
+                                pane.classList.remove('hidden');
+                                pane.classList.add('active');
+                            } else {
+                                pane.classList.add('hidden');
+                                pane.classList.remove('active');
+                            }
+                        });
+                    });
+                });
+
+                // ============ AGREGAR ESTE CÓDIGO DEL CARRUSEL ============
+                
+                // Carousel functionality
+                let currentSlide = 0;
+                const slides = document.querySelectorAll('#carousel-track > div');
+                const totalSlides = slides.length;
+                const track = document.getElementById('carousel-track');
+                const indicators = document.querySelectorAll('.carousel-indicator');
+                
+                function updateCarousel() {
+                    const translateX = -currentSlide * 100;
+                    track.style.transform = `translateX(${translateX}%)`;
+                    
+                    // Update indicators
+                    indicators.forEach((indicator, index) => {
+                        if (index === currentSlide) {
+                            indicator.classList.remove('bg-gray-300');
+                            indicator.classList.add('bg-primary');
+                        } else {
+                            indicator.classList.remove('bg-primary');
+                            indicator.classList.add('bg-gray-300');
+                        }
+                    });
+                }
+                
+                function nextSlide() {
+                    currentSlide = (currentSlide + 1) % totalSlides;
+                    updateCarousel();
+                }
+                
+                function prevSlide() {
+                    currentSlide = (currentSlide - 1 + totalSlides) % totalSlides;
+                    updateCarousel();
+                }
+                
+                // Event listeners para los botones
+                const nextBtn = document.getElementById('next-btn');
+                const prevBtn = document.getElementById('prev-btn');
+                
+                if (nextBtn && prevBtn) {
+                    nextBtn.addEventListener('click', nextSlide);
+                    prevBtn.addEventListener('click', prevSlide);
+                }
+                
+                // Indicator clicks
+                indicators.forEach((indicator, index) => {
+                    indicator.addEventListener('click', () => {
+                        currentSlide = index;
+                        updateCarousel();
+                    });
+                });
+                
+                // Auto-play
+                let autoPlay = setInterval(nextSlide, 6000);
+                
+                // Pausar auto-play al hacer hover
+                const carousel = document.getElementById('carousel');
+                if (carousel) {
+                    carousel.addEventListener('mouseenter', () => {
+                        clearInterval(autoPlay);
+                    });
+                    
+                    carousel.addEventListener('mouseleave', () => {
+                        autoPlay = setInterval(nextSlide, 6000);
+                    });
+                }
+                
+                // ============ FIN DEL CÓDIGO DEL CARRUSEL ============
+
+                // Contact Form Submission
+                const contactForm = document.getElementById('contact-form');
+                const formMessage = document.getElementById('form-message');
+                contactForm.addEventListener('submit', function(e) {
+                    e.preventDefault();
+                    formMessage.textContent = 'Enviando mensaje...';
+                    formMessage.className = 'text-blue-600';
+
+                    // Simulate form submission
+                    setTimeout(() => {
+                        formMessage.textContent = '¡Bienvenida la consulta! Apenas pueda me pondré en contacto con usted.';
+                        formMessage.className = 'text-green-600 font-semibold';
+                        contactForm.reset();
+                    }, 1500);
+                });
             });
-        });
     </script>
-</body>
-</html>
