@@ -67,8 +67,8 @@
         <div id="mobile-menu" class="hidden md:hidden bg-white">
             <a href="#servicios" class="block text-center py-2 px-4 text-sm text-gray-700 hover:bg-gray-100">Servicios</a>
             <a href="#sobre-mi" class="block text-center py-2 px-4 text-sm text-gray-700 hover:bg-gray-100">Sobre Mí</a>
-            <a href="#proyectos" class="block text-center py-2 px-4 text-sm text-gray-700 hover:bg-gray-100">Proyectos</a> <!-- ⬅️ CAMBIAR AQUÍ -->
-            <a href="#casos-exito" class="block text-center py-2 px-4 text-sm text-gray-700 hover:bg-gray-100">Casos de Éxito</a> <!-- ⬅️ CAMBIAR AQUÍ -->
+            <a href="#proyectos" class="block text-center py-2 px-4 text-sm text-gray-700 hover:bg-gray-100">Proyectos</a>
+            <a href="#casos-exito" class="block text-center py-2 px-4 text-sm text-gray-700 hover:bg-gray-100">Casos de Éxito</a>
             <a href="#recursos" class="block text-center py-2 px-4 text-sm text-gray-700 hover:bg-gray-100">Recursos</a>
             <a href="#contacto" class="block text-center py-2 px-4 text-sm text-gray-700 hover:bg-gray-100">Contacto</a>
         </div>
@@ -85,7 +85,7 @@
         <br><span class="font-bold">Eficiencia</span> para el sistema.
 </p>
 
-                <a href="#contacto" class="bg-primary text-white font-bold py-3 px-8 rounded-lg text-lg hover:bg-opacity-90 transition duration-300">Escríbeme...</a>
+                <a href="#contacto" class="bg-primary text-white font-bold py-3 px-8 rounded-lg text-lg hover:bg-opacity-90 transition duration-300">Conversemos</a>
 
                 <div class="mt-16 grid grid-cols-1 md:grid-cols-5 gap-10 max-w-6xl mx-auto">
                     <div class="text-center">
@@ -545,7 +545,15 @@
             
             <!-- Formulario -->
             <div class="lg:w-1/3">
-                <form id="contact-form">
+                <form name="contact" method="POST" data-netlify="true" data-netlify-honeypot="bot-field">
+                    <!-- Campo oculto para el formulario -->
+                    <input type="hidden" name="form-name" value="contact">
+                    
+                    <!-- Campo anti-spam oculto -->
+                    <div style="display: none;">
+                        <label>No llenar si eres humano: <input name="bot-field"></label>
+                    </div>
+                    
                     <div class="mb-4">
                         <label for="name" class="block text-gray-700 font-semibold mb-2">Nombre y Apellido</label>
                         <input type="text" id="name" name="name" class="w-full p-3 border border-gray-300 rounded-md" required>
@@ -560,6 +568,7 @@
                     </div>
                     <button type="submit" class="w-full bg-primary text-white font-bold py-3 px-6 rounded-md hover:bg-opacity-90 transition">Enviar Mensaje</button>
                 </form>
+
                 <div id="form-message" class="mt-4 text-center"></div>
             </div>
         </div>
@@ -721,20 +730,20 @@
                 
                 // ============ FIN DEL CÓDIGO DEL CARRUSEL ============
 
-                // Contact Form Submission
-                const contactForm = document.getElementById('contact-form');
+                // Contact Form Submission (REEMPLAZAR líneas ~780-792)
+                const contactForm = document.querySelector('form[name="contact"]');
                 const formMessage = document.getElementById('form-message');
+
                 contactForm.addEventListener('submit', function(e) {
-                    e.preventDefault();
+                    // No prevenir el submit - dejar que Netlify lo maneje
                     formMessage.textContent = 'Enviando mensaje...';
                     formMessage.className = 'text-blue-600';
+                    formMessage.textContent = 'Mensaje enviado con éxito.';
+                    formMessage.classList.remove('text-blue-600');
+                    formMessage.classList.add('text-green-600');
 
-                    // Simulate form submission
-                    setTimeout(() => {
-                        formMessage.textContent = '¡Bienvenida la consulta! Apenas pueda me pondré en contacto con usted.';
-                        formMessage.className = 'text-green-600 font-semibold';
-                        contactForm.reset();
-                    }, 1500);
+                    // Netlify procesará automáticamente el formulario
+                    // y puede redirigir a una página de éxito o regresar aquí
                 });
             });
     </script>
