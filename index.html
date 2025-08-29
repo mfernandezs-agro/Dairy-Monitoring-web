@@ -50,7 +50,7 @@
     <!-- Header & Navigation -->
     <header id="header" class="bg-white/80 backdrop-blur-md shadow-sm sticky top-0 z-50">
         <nav class="container mx-auto px-6 py-4 flex justify-between items-center">
-            <a href="#inicio" class="text-2xl font-bold text-primary">Algoritmo Animal AiA</a>
+            <a href="#inicio" class="text-2xl font-bold text-primary">AiA (Algoritmo Animal)</a>
             <div class="hidden md:flex items-center space-x-8">
                 <a href="#servicios" class="nav-link text-gray-600 border-b-2 border-transparent pb-1">Servicios</a>
                 <a href="#sobre-mi" class="nav-link text-gray-600 border-b-2 border-transparent pb-1">Sobre Mí</a>
@@ -79,7 +79,7 @@
         <section id="inicio" class="min-h-screen flex items-center bg-cover bg-center" style="background-image: linear-gradient(rgba(253, 251, 248, 0.8),
          rgba(253, 251, 248, 0.8)), url('fondo.jpeg');">
             <div class="container mx-auto px-6 text-center">
-                <h1 class="text-4xl md:text-6xl font-bold text-secondary leading-tight mb-4">Los Datos no deben abrumar, deben ayudar.<br> Y mejorar la precisión.</span></h1>
+                <h1 class="text-4xl md:text-6xl font-bold text-secondary leading-tight mb-4">Los Datos no deben abrumar, deben ayudar.<br> Y resolver un problema.</span></h1>
                 <p class="text-lg md:text-xl text-black-700 max-w-3xl mx-auto mb-8">
         <span class="font-bold">Simplificamos lo complejo</span>, los datos prediales al alcance de su mano. <span class="font-bold">Soluciones simples y prácticas</span> para ahorrar valioso tiempo. 
         <br><span class="font-bold">Eficiencia</span> para el sistema.
@@ -120,16 +120,17 @@
             <p class="text-lg text-gray-600 mt-2">Cada servicio está diseñado para <span class="font-semibold">resolver problemas específicos</span> que enfrentan productores y empresas de servicios <span class="font-semibold">del sector agropecuario.</span></p>
         </div>
         
-        <!-- Primera fila: 3 tarjetas -->
-        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mb-8">
+        <!-- GRID ÚNICO: 4 servicios en 2x2 -->
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-6xl mx-auto">
+            
             <!-- Service Card 1 -->
             <div class="service-card bg-gray-50 rounded-lg p-8 border border-gray-200">
                 <h3 class="text-2xl font-bold text-secondary mb-4">Monitoreo Lechero de Precisión</h3>
                 <p class="text-gray-600 mb-4">Para lecherías que buscan pragmatismo y eficiencia. Ahorre tiempo, reduzca errores y facilite el éxito de los manejos.</p>
                 <ul class="text-blue-600 space-y-2">
-                    <li class="flex items-center"><span class="text-primary mr-2">✓</span>Menos esfuerzo y más tiempo para otras tareas</li>
                     <li class="flex items-center"><span class="text-primary mr-2">✓</span>Más práctico: decisiones más rápidas y precisas</li>
-                    <li class="flex items-center"><span class="text-primary mr-2">✓</span>Mejor seguimiento y más autonomía</li>
+                    <li class="flex items-center"><span class="text-primary mr-2">✓</span>Menos esfuerzo y más tiempo para otras tareas</li>
+                    <li class="flex items-center"><span class="text-primary mr-2">✓</span>Seguimiento de RCS, Productivos y Ranking</li>
                 </ul>
             </div>
             
@@ -146,32 +147,31 @@
             
             <!-- Service Card 3 -->
             <div class="service-card bg-gray-50 rounded-lg p-8 border border-gray-200">
-                <h3 class="text-2xl font-bold text-secondary mb-4">Automatización de Reportes a Medida</h3>
+                <h3 class="text-2xl font-bold text-secondary mb-4">Automatización de Reportes a Medida y Digitalización</h3>
                 <p class="text-gray-600 mb-4">Para PYMES de servicios, cooperativas o predios con desafíos de datos muy específicos e integración de sistemas complejos o análisis históricos.</p>
                 <ul class="text-blue-600 space-y-2">
                     <li class="flex items-center"><span class="text-primary mr-2">✓</span>Soluciones 100% personalizadas</li>
                     <li class="flex items-center"><span class="text-primary mr-2">✓</span>Reducción en jornadas y tiempos de entrega</li>
-                    <li class="flex items-center"><span class="text-primary mr-2">✓</span>Simplificación de procesos</li>
+                    <li class="flex items-center"><span class="text-primary mr-2">✓</span>Desarrollo de apps desde y para el sector</li>
+                </ul>
+            </div>
+            
+            <!-- Service Card 4 -->
+            <div class="service-card bg-gray-50 rounded-lg p-8 border border-gray-200">
+                <h3 class="text-2xl font-bold text-secondary mb-4">Análisis genómicos y de genealogía</h3>
+                <p class="text-gray-600 mb-4">Esquemas para la selección o asignación dirigida de hembras de forma temprana en base a datos o biotecnología.</p>
+                <ul class="text-blue-600 space-y-2">
+                    <li class="flex items-center"><span class="text-primary mr-2">✓</span>Plan y análisis PCR leche A2 (beta-caseína)</li>
+                    <li class="flex items-center"><span class="text-primary mr-2">✓</span>Plan y análisis PCR Kappa-caseína (BB)</li>
+                    <li class="flex items-center"><span class="text-primary mr-2">✓</span>Estudios de genealogía cruzado con PCR</li>
                 </ul>
             </div>
         </div>
-        
-        <!-- Segunda fila: 2 tarjetas centradas -->
-        <div class="flex justify-center">
-            <div class="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-4xl">
-                <!-- Service Card 4 -->
-                <div class="service-card bg-gray-50 rounded-lg p-8 border border-gray-200">
-                    <h3 class="text-2xl font-bold text-secondary mb-4">Análisis genómicos y de genealogía</h3>
-                    <p class="text-gray-600 mb-4">Esquemas para la selección o asignación dirigida de hembras de forma temprana en base a datos o biotecnología.</p>
-                    <ul class="text-blue-600 space-y-2">
-                        <li class="flex items-center"><span class="text-primary mr-2">✓</span>Plan y análisis PCR leche A2 (beta-caseína)</li>
-                        <li class="flex items-center"><span class="text-primary mr-2">✓</span>Plan y análisis PCR Kappa-caseína (BB)</li>
-                        <li class="flex items-center"><span class="text-primary mr-2">✓</span>Estudios de genealogía cruzado con PCR</li>
-                    </ul>
-                </div>
+    </div>
+</section>
                 
                 <!-- Service Card 5 -->
-                <div class="service-card bg-gray-50 rounded-lg p-8 border border-gray-200">
+                <!--<div class="service-card bg-gray-50 rounded-lg p-8 border border-gray-200">
                     <h3 class="text-2xl font-bold text-secondary mb-4">Consultoría en Transformación Digital</h3>
                     <p class="text-gray-600 mb-4">Para empresas que buscan adoptar nuevas tecnologías y mejorar su competitividad.</p>
                     <ul class="text-blue-600 space-y-2">
@@ -183,7 +183,7 @@
             </div>
         </div>
     </div>
-</section>
+</section> -->
 
         <!-- Section 3: Sobre Mí -->
         <section id="sobre-mi" class="py-20">
@@ -196,8 +196,10 @@
                     </div>
                     <div class="md:w-2/3">
                         <h2 class="text-4xl font-bold text-primary mb-6">Mi misión: <br>Unir el Campo con la Tecnología</h2>
-                        <p class="text-lg text-gray-700 mb-4">Mi pasión fue cultivada por mis abuelos. Como Ingeniero Agrícola, viví en terreno los desafíos de la gestión diaria. Pero mi curiosidad por la tecnología me llevó a especializarme en Data Science. Hoy, mis esfuerzos están en unir estos dos mundos, la tradición y la innovación, para ofrecer soluciones tecnológicas que sean realmente prácticas y útiles para el sector, todo con foco en la sostenibilidad.</p>
-                        <p class="text-lg text-gray-700 font-semibold text-secondary">"Simplificar la tecnología para ser aplicable al campo. Usar los datos e integrarlos para tomar decisiones rápidas, inteligentes y precisas. Mejorando la eficiencia al reducir los esfuerzos diarios para producir leche."</p>
+                        <p class="text-lg text-gray-700 mb-4">Mi pasión fue presentada por mis abuelos. Como Ingeniero Agrícola, viví en terreno los desafíos de la gestión diaria.
+                             Pero mi curiosidad por la tecnología me llevó a especializarme en Data Science. 
+                             Hoy, mis esfuerzos están en unir estos dos mundos, la tradición y la innovación, para ofrecer soluciones tecnológicas basadas en datos que sean realmente prácticas y útiles para el sector, fundamentadas en la ciencia y la sostenibilidad.</p>
+                        <p class="text-lg text-gray-700 font-semibold text-secondary">"Simplificar la tecnología para ser aplicable al campo. Usar los datos e integrarlos para tomar decisiones rápidas, inteligentes y precisas. Mejorar la eficiencia al reducir los esfuerzos diarios para producir leche."</p>
                     </div>
                 </div>
             </div>
@@ -211,7 +213,7 @@
                     <p class="text-lg text-gray-600 mt-2">Conozca algunos de los proyectos adjudicados y en marcha de la empresa.</p>
                 </div>
 
-                <!-- MOVER TODO EL CARRUSEL AQUÍ -->
+                <!-- CARRUSEL AQUÍ -->
                 <div class="mb-12">
                     <div class="relative max-w-5xl mx-auto">
                         <!-- Contenedor del carrusel -->
@@ -231,11 +233,11 @@
                                 
                                 <!-- Slide 2 -->
                                 <div class="w-full flex-shrink-0 relative">
-                                    <img src="sala ordena.HEIC" alt="Certificación Sustentabilidad" class="w-full h-96 object-cover">
+                                    <img src="certificacion.HEIC" alt="Certificación Sustentabilidad" class="w-full h-96 object-cover">
                                     <div class="absolute inset-0 bg-black bg-opacity-20 flex items-end">
                                         <div class="text-white p-6">
                                             <h4 class="text-xl font-bold">Certificación de Sustentabilidad</h4>
-                                            <p class="text-sm font-bold">Diagnóstico y plan de mejora en prácticas sostenibles</p>
+                                            <p class="text-sm font-bold">Diagnóstico y plan de mejora en prácticas</p>
                                         </div>
                                     </div>
                                 </div>
@@ -264,16 +266,50 @@
 
                                 <!-- Slide 5 -->
                                 <div class="w-full flex-shrink-0 relative">
-                                    <img src="charla.jpeg" alt="Digitalización de Procesos" class="w-full h-96 object-contain">
+                                    <img src="explicando.HEIC" alt="Digitalización de Procesos" class="w-full h-96 object-cover">
                                     <div class="absolute inset-0 bg-black bg-opacity-20 flex items-end">
                                         <div class="text-white p-6">
                                             <h4 class="text-xl font-bold">Digitalización de Procesos</h4>
-                                            <p class="text-sm font-bold">Optimización y automatización de flujos de trabajo</p>
+                                            <p class="text-sm font-bold">Optimización y registros en aréas de trabajo</p>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- Slide 6 -->
+                                <div class="w-full flex-shrink-0 relative">
+                                    <img src="uniform.HEIC" alt="En terreno 1" class="w-full h-96 object-cover">
+                                    <div class="absolute inset-0 bg-black bg-opacity-20 flex items-end">
+                                        <div class="text-white p-6">
+                                            <h4 class="text-xl font-bold">Integración y uso de herramientas digitales</h4>
+                                            <p class="text-sm font-bold">Maximización en el uso de softwares de gestión lechera</p>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- Slide 7 -->
+                                <div class="w-full flex-shrink-0 relative">
+                                    <img src="charla.jpeg" alt="En terreno 2" class="w-full h-96 object-contain">
+                                    <div class="absolute inset-0 bg-black bg-opacity-20 flex items-end">
+                                        <div class="text-white p-6">
+                                            <h4 class="text-xl font-bold">Integración del personal en nuevos procesos</h4>
+                                            <p class="text-sm font-bold">Compromiso para flujos de trabajo efectivos</p>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- Slide 8 -->
+                                <div class="w-full flex-shrink-0 relative">
+                                    <img src="vacas caminando.jpeg" alt="En terreno 3" class="w-full h-96 object-cover">
+                                    <div class="absolute inset-0 bg-black bg-opacity-20 flex items-end">
+                                        <div class="text-white p-6">
+                                            <h4 class="text-xl font-bold">Producción de leche</h4>
+                                            <p class="text-sm font-bold">Sistemas de leche basados en el pastoreo y bienestar animal</p>
                                         </div>
                                     </div>
                                 </div>
                             </div>
                         </div>
+                                
                 
                         <!-- Botones de navegación -->
                         <button id="prev-btn" class="absolute left-4 top-1/2 transform -translate-y-1/2 bg-white bg-opacity-80 hover:bg-opacity-100 text-gray-800 p-2 rounded-full shadow-lg transition">
@@ -294,6 +330,9 @@
                             <button class="carousel-indicator w-3 h-3 rounded-full bg-gray-300" data-slide="2"></button>
                             <button class="carousel-indicator w-3 h-3 rounded-full bg-gray-300" data-slide="3"></button>
                             <button class="carousel-indicator w-3 h-3 rounded-full bg-gray-300" data-slide="4"></button>
+                            <button class="carousel-indicator w-3 h-3 rounded-full bg-gray-300" data-slide="5"></button>
+                            <button class="carousel-indicator w-3 h-3 rounded-full bg-gray-300" data-slide="6"></button>
+                            <button class="carousel-indicator w-3 h-3 rounded-full bg-gray-300" data-slide="7"></button>
                         </div>
                     </div>
                 </div>
@@ -305,24 +344,28 @@
             <div class="container mx-auto px-6">
                 <div class="text-center mb-12">
                     <h2 class="text-4xl font-bold text-primary">Resultados Tangibles</h2>
-                    <p class="text-lg text-gray-600 mt-2">Así es como mis soluciones han impactado a empresas como la suya.</p>
+                    <p class="text-lg text-gray-600 mt-2">Así es como mis propuestas han impactado a empresas como la suya.</p>
                 </div>
 
                 <!-- SOLO LAS PESTAÑAS DE CASOS DE ÉXITO -->
                 <div class="max-w-4xl mx-auto">
                     <div class="border-b border-gray-200">
                         <nav class="-mb-px flex space-x-8" aria-label="Tabs">
-                            <button class="tab active whitespace-nowrap py-4 px-1 border-b-2 font-medium text-lg" data-tab="caso1">PMV: Empresa de Medición</button>
-                            <button class="tab whitespace-nowrap py-4 px-1 border-b-2 font-medium text-lg text-gray-500" data-tab="caso2">Próximamente: Caso 2</button>
+                            <button class="tab active whitespace-nowrap py-4 px-1 border-b-2 font-medium text-lg" data-tab="caso1">Empresa de Medición</button>
+                            <button class="tab whitespace-nowrap py-4 px-1 border-b-2 font-medium text-lg text-gray-500" data-tab="caso2">Administrador Lechero</button>
+                            <button class="tab whitespace-nowrap py-4 px-1 border-b-2 font-medium text-lg text-gray-500" data-tab="caso3">Agrícola y Lechera</button>
+                            <button class="tab whitespace-nowrap py-4 px-1 border-b-2 font-medium text-lg text-gray-500" data-tab="caso4">Empresas Lecheras</button>
+                            <button class="tab whitespace-nowrap py-4 px-1 border-b-2 font-medium text-lg text-gray-500" data-tab="caso5">Laboratorio Génetica</button>
                         </nav>
                     </div>
                     <div id="tab-content" class="mt-8">
+
                         <!-- Tab Content 1 -->
                         <div id="caso1" class="tab-pane active">
                             <div class="bg-gray-50 p-8 rounded-lg border border-gray-200">
                                 <h3 class="text-2xl font-bold text-secondary mb-2">Cliente: Empresa de Servicios, Región de Los Ríos</h3>
                                 <p class="font-semibold text-gray-700 mb-4">Desafío: Procesos manuales, lentos y propensos a errores para generar reportes a sus clientes.</p>
-                                <p class="text-gray-600 mb-6">La solución fue desarrollar e implementar un prototipo (PMV) de la plataforma para automatizar el análisis y la creación de informes personalizados, transformando su flujo de trabajo.</p>
+                                <p class="text-gray-600 mb-6">La solución fue desarrollar e implementar un prototipo de una App para automatizar el análisis con reportes personalizables, transformando su flujo de trabajo.</p>
                                 <div class="grid grid-cols-1 sm:grid-cols-3 gap-6 text-center">
                                     <div>
                                         <p class="text-3xl font-bold text-primary">40%</p>
@@ -338,16 +381,98 @@
                                     </div>
                                 </div>
                                 <div class="mt-6 border-t border-gray-200 pt-6">
-                                    <p class="text-gray-700 italic">"Gracias a Marcos, ahora entendemos nuestros datos y hemos mejorado drásticamente la satisfacción de nuestros clientes."</p>
-                                    <p class="text-right font-semibold text-secondary mt-2">- Gerente de Operaciones</p>
+                                    <p class="text-gray-700 italic">"Gracias a Marcos, ahora entendemos nuestros datos, hemos mejorado la satisfacción de los clientes y tenemos más tiempo para otras tareas."</p>
+                                    <p class="text-right font-semibold text-secondary mt-2">- Encargado Operaciones</p>
                                 </div>
                             </div>
                         </div>
-                        <!-- Tab Content 2 -->
+
+                        <!-- Tab Content 2-->
                         <div id="caso2" class="tab-pane hidden">
+                            <div class="bg-gray-50 p-8 rounded-lg border border-gray-200">
+                                <h3 class="text-2xl font-bold text-secondary mb-2">Cliente: Empresa Lechera, Región de Los Lagos</h3>
+                                <p class="font-semibold text-gray-700 mb-4">Desafío: Bajo uso y utilidad de softwares de gestión lechera y excesivo tiempo en ingreso de datos.</p>
+                                <p class="text-gray-600 mb-6">La solución fue integrar el uso de tecnología en la gestión de datos para un mejor registro y control.</p>
+                                <div class="grid grid-cols-1 sm:grid-cols-3 gap-6 text-center">
+                                    <div>
+                                        <p class="text-3xl font-bold text-primary">90%</p>
+                                        <p class="text-gray-600">Recolección de datos digital.</p>
+                                    </div>
+                                    <div>
+                                        <p class="text-3xl font-bold text-primary">4hrs/semana</p>
+                                        <p class="text-gray-600">Reducción en el tiempo de ingreso de datos.</p>
+                                    </div>
+                                    <div>
+                                        <p class="text-3xl font-bold text-primary">0.5%</p>
+                                        <p class="text-gray-600">En errores de digitación y trazabilidad animal</p>
+                                    </div>
+                                </div>
+                                <div class="mt-6 border-t border-gray-200 pt-6">
+                                    <p class="text-gray-700 italic">"Gracias a Marcos, hemos logrado una transformación digital que nos ha permitido ser más eficientes y usar mis datos para decisiones futuras."</p>
+                                    <p class="text-right font-semibold text-secondary mt-2">- Encargado predial</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Tab Content 3-->
+                         <div id="caso3" class="tab-pane hidden">
+                            <div class="bg-gray-50 p-8 rounded-lg border border-gray-200">
+                                <h3 class="text-2xl font-bold text-secondary mb-2">Cliente: Empresas Lecheras, Región de Los Ríos</h3>
+                                <p class="font-semibold text-gray-700 mb-4">Desafío: Implementar acciones para la Certificación de Sustentabilidad lechera.</p>
+                                <p class="text-gray-600 mb-6">La solución fue diseñar un plan de trabajo estructurado, claro y pertinente a las virtudes de cada predio.</p>
+                                <div class="grid grid-cols-1 sm:grid-cols-3 gap-6 text-center">
+                                    <div>
+                                        <p class="text-3xl font-bold text-primary">1 mes</p>
+                                        <p class="text-gray-600">Diagnóstico y propuesta plan de trabajo según años.</p>
+                                    </div>
+                                    <div>
+                                        <p class="text-3xl font-bold text-primary">6 meses</p>
+                                        <p class="text-gray-600">Implementación de acciones y registros de corto, mediano y largo plazo.</p>
+                                    </div>
+                                    <div>
+                                        <p class="text-3xl font-bold text-primary">Cierre</p>
+                                        <p class="text-gray-600">Certificación de 2 a 3 años del Estándar de Sustentabilidad Lechera</p>
+                                    </div>
+                                </div>
+                                <div class="mt-6 border-t border-gray-200 pt-6">
+                                    <p class="text-gray-700 italic">"Gracias a Marcos, usando el trabajo actual e integrando nuevas estrategias se hizo más claro y llevadero el proceso de Certificación."</p>
+                                    <p class="text-right font-semibold text-secondary mt-2">- Propietarios</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Tab Content 4 -->
+                        <div id="caso4" class="tab-pane hidden">
+                            <div class="bg-gray-50 p-8 rounded-lg border border-gray-200">
+                                <h3 class="text-2xl font-bold text-secondary mb-2">Clientes: Predios lecheros de la Región de Los Ríos y Los Lagos</h3>
+                                <p class="font-semibold text-gray-700 mb-4">Desafío: Excesivo tiempo y dificultades en la manipulación de datos para el análisis de manejos prácticos.</p>
+                                <p class="text-gray-600 mb-6">La solución fue la integración, automatización y gestión cómoda de datos para uso en terreno, desde trabajadores a asesores</p>
+                                <div class="grid grid-cols-1 sm:grid-cols-3 gap-6 text-center">
+                                    <div>
+                                        <p class="text-3xl font-bold text-primary">95%</p>
+                                        <p class="text-gray-600">Recolección de datos para digitalización.</p>
+                                    </div>
+                                    <div>
+                                        <p class="text-3xl font-bold text-primary">8hrs</p>
+                                        <p class="text-gray-600">Reducción de errores y tiempo en la manipulación de datos para terreno.</p>
+                                    </div>
+                                    <div>
+                                        <p class="text-3xl font-bold text-primary">Mayor</p>
+                                        <p class="text-gray-600">Independencia en la toma de decisiones y selección.</p>
+                                    </div>
+                                </div>
+                                <div class="mt-6 border-t border-gray-200 pt-6">
+                                    <p class="text-gray-700 italic">"Gracias a Marcos, hemos mejorado el monitoreo, al detectar con rápidez y precisión problemas del rebaño."</p>
+                                    <p class="text-right font-semibold text-secondary mt-2">- Administradores y trabajadores</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Tab Content 5 -->
+                        <div id="caso5" class="tab-pane hidden">
                             <div class="bg-gray-50 p-8 rounded-lg border border-gray-200 text-center">
-                                <h3 class="text-2xl font-bold text-secondary mb-2">Próximamente</h3>
-                                <p class="text-gray-600">Estamos documentando nuevos casos de éxito. ¡Vuelva pronto!</p>
+                                <h3 class="text-2xl font-bold text-secondary mb-2">En desarrollo...</h3>
+                                <p class="text-gray-600">Estamos documentando los efectos de este proyecto. ¡Vuelva pronto!</p>
                             </div>
                         </div>
                     </div>
@@ -364,23 +489,23 @@
                 <div class="grid grid-cols-1 md:grid-cols-3 gap-8 mt-12 max-w-5xl mx-auto">
                     <div class="bg-white p-6 rounded-lg shadow-md text-left">
                         <h4 class="font-bold text-secondary text-lg mb-2">5 Indicadores Clave en su Lechería</h4>
-                        <p class="text-gray-600 text-sm">Vaya más allá de los litros. Descubra los KPIs que realmente impactan su rentabilidad.</p>
+                        <p class="text-gray-600 text-sm">Vaya más allá de los litros. Descubra como maximizar el uso de sus datos.</p>
                         <a href="#" class="text-primary font-semibold mt-4 inline-block">Leer más →</a>
                     </div>
                     <div class="bg-white p-6 rounded-lg shadow-md text-left">
-                        <h4 class="font-bold text-secondary text-lg mb-2">PABCO: Simplifique su Cumplimiento</h4>
-                        <p class="text-gray-600 text-sm">Vea cómo la tecnología puede transformar la gestión de normativas en un proceso simple y trazable.</p>
+                        <h4 class="font-bold text-secondary text-lg mb-2">SIPEC: Simplifique su Cuadratura</h4>
+                        <p class="text-gray-600 text-sm">Vea cómo la tecnología y la digitalización puede transformar la gestión de normativas.</p>
                         <a href="#" class="text-primary font-semibold mt-4 inline-block">Leer más →</a>
                     </div>
                     <div class="bg-white p-6 rounded-lg shadow-md text-left">
                         <h4 class="font-bold text-secondary text-lg mb-2">¿Muchos Datos, Poca Información?</h4>
-                        <p class="text-gray-600 text-sm">Una guía práctica para empezar a transformar sus datos acumulados en decisiones inteligentes.</p>
+                        <p class="text-gray-600 text-sm">Una guía práctica para transformar sus datos acumulados en decisiones prácticas e inteligentes.</p>
                         <a href="#" class="text-primary font-semibold mt-4 inline-block">Leer más →</a>
                     </div>
                 </div>
                 <div class="mt-12 bg-primary text-white p-8 rounded-lg max-w-3xl mx-auto">
-                    <h3 class="text-2xl font-bold">Descargue GRATIS mi Checklist para un Control Lechero Eficiente</h3>
-                    <p class="mt-2 mb-4">Una herramienta práctica para evaluar y mejorar sus procesos de gestión de datos hoy mismo.</p>
+                    <h3 class="text-2xl font-bold">Descargue un Checklist para un Monitoreo Lechero preciso</h3>
+                    <p class="mt-2 mb-4">Una herramienta práctica para evaluar y mejorar sus procesos de gestión de datos.</p>
                     <form class="flex flex-col sm:flex-row gap-2 justify-center">
                         <input type="email" placeholder="Su correo electrónico" class="w-full sm:w-auto flex-grow p-3 rounded-md text-gray-800" required>
                         <button type="submit" class="bg-secondary text-white font-bold py-3 px-6 rounded-md hover:bg-opacity-90 transition">Descargar Ahora</button>
@@ -389,48 +514,56 @@
             </div>
         </section>
 
-        <!-- Section 7: Contacto -->
-        <section id="contacto" class="py-20 bg-white">
-            <div class="container mx-auto px-6">
-                <div class="text-center mb-12">
-                    <h2 class="text-4xl font-bold text-primary">Conversemos sin compromiso</h2>
-                    <p class="text-lg text-gray-600 mt-2 max-w-2xl mx-auto">Las preguntas no tienen costo. Primero hay que hablar de lo que se puede y no se puede hacer. La idea es aportar sinceramente.</p>
-                </div>
-                <div class="max-w-3xl mx-auto flex flex-col md:flex-row gap-10">
-                    <div class="md:w-1/2 bg-gray-50 p-8 rounded-lg border border-gray-200">
-                        <h3 class="text-xl font-bold text-secondary mb-4">Información de Contacto</h3>
-                        <p class="text-gray-700 mb-2"><strong>Email:</strong><br> algoritmoanimalayaspa@gmail.com</p>
-                        <p class="text-gray-700 mb-2"><strong>Teléfono/WhatsApp:</strong><br><span class="whitespace-nowrap">+56 9 3029390</span></p>
-                        <p class="text-gray-700 mb-2"><strong>Redes sociales:</strong><br><a href="https://www.linkedin.com/in/marcos-andres-fernandez/" target="_blank" rel="noopener noreferrer" class="text-primary hover:text-secondary underline">https://www.linkedin.com/in/marcos-andres-fernandez/</a></p>
-                        <p class="text-gray-700 mb-2"><strong>Ubicación geográfica:</strong><br> Valdivia, Región de Los Ríos, Chile</p>
-                        <p class="text-gray-700 mb-2"><strong>Trabajos:</strong><br> Zona Sur de Chile</p>
-                        <p class="text-gray-700 mb-2"><strong>Proyectos Tesis Msc: <br> Detección de mastitis por sensores</strong><br>
+<!-- Section 7: Contacto -->
+<section id="contacto" class="py-20 bg-white">
+    <div class="container mx-auto px-6">
+        <div class="text-center mb-12">
+            <h2 class="text-4xl font-bold text-primary">Conversemos sin compromiso</h2>
+            <p class="text-lg text-gray-600 mt-2 max-w-2xl mx-auto">Las preguntas no tienen costo. Primero hay que hablar de lo que se puede y no se puede hacer. La idea es aportar sinceramente.</p>
+        </div>
+        <div class="max-w-6xl mx-auto flex flex-col lg:flex-row gap-8">
+            
+            <!-- NUEVA COLUMNA: Foto -->
+            <div class="lg:w-1/3 text-center">
+                <img src="con las vacas2.HEIC" alt="Marcos Fernández en consultoría" class="rounded-lg w-full h-80 object-cover shadow-lg mb-4">
+                <p class="text-gray-600 text-sm italic">Disponible para trabajo presencial y remoto</p>
+            </div>
+            
+            <!-- Información de Contacto -->
+            <div class="lg:w-1/3 bg-gray-50 p-8 rounded-lg border border-gray-200">
+                <h3 class="text-xl font-bold text-secondary mb-4">Información de Contacto</h3>
+                <p class="text-gray-700 mb-2"><strong>Email:</strong><br> algoritmoanimalayaspa@gmail.com</p>
+                <p class="text-gray-700 mb-2"><strong>Teléfono/WhatsApp:</strong><br><span class="whitespace-nowrap">+56 9 3029390</span></p>
+                <p class="text-gray-700 mb-2"><strong>Redes sociales:</strong><br><a href="https://www.linkedin.com/in/marcos-andres-fernandez/" target="_blank" rel="noopener noreferrer" class="text-primary hover:text-secondary underline">LinkedIn</a></p>
+                <p class="text-gray-700 mb-2"><strong>Ubicación:</strong><br> Valdivia, Región de Los Ríos, Chile</p>
+                <p class="text-gray-700 mb-2"><strong>Zona de trabajo:</strong><br> Sur de Chile</p>
+                <p class="text-gray-700 mb-2"><strong>Presentación Tesis Msc:  </strong><br> Detección de mastitis por sensores<br>
                             <a href="https://lnkd.in/ed-UFnTZ" target="_blank" rel="noopener noreferrer" class="text-primary hover:text-secondary underline">https://lnkd.in/ed-UFnTZ</a>
                         </p>
-                        <p class="text-gray-700"><strong>Disponibilidad:</strong><br> Remoto y Presencial</p>
-                    </div>
-                    <div class="md:w-1/2">
-                        <form id="contact-form">
-                            <div class="mb-4">
-                                <label for="name" class="block text-gray-700 font-semibold mb-2">Nombre y Apellido</label>
-                                <input type="text" id="name" name="name" class="w-full p-3 border border-gray-300 rounded-md" required>
-                            </div>
-                            <div class="mb-4">
-                                <label for="email" class="block text-gray-700 font-semibold mb-2">Email</label>
-                                <input type="email" id="email" name="email" class="w-full p-3 border border-gray-300 rounded-md" required>
-                            </div>
-                             <div class="mb-4">
-                                <label for="message" class="block text-gray-700 font-semibold mb-2">Mensaje</label>
-                                <textarea id="message" name="message" rows="4" class="w-full p-3 border border-gray-300 rounded-md" required></textarea>
-                            </div>
-                            <button type="submit" class="w-full bg-primary text-white font-bold py-3 px-6 rounded-md hover:bg-opacity-90 transition">Enviar Mensaje</button>
-                        </form>
-                        <div id="form-message" class="mt-4 text-center"></div>
-                    </div>
-                </div>
             </div>
-        </section>
-    </main>
+            
+            <!-- Formulario -->
+            <div class="lg:w-1/3">
+                <form id="contact-form">
+                    <div class="mb-4">
+                        <label for="name" class="block text-gray-700 font-semibold mb-2">Nombre y Apellido</label>
+                        <input type="text" id="name" name="name" class="w-full p-3 border border-gray-300 rounded-md" required>
+                    </div>
+                    <div class="mb-4">
+                        <label for="email" class="block text-gray-700 font-semibold mb-2">Email</label>
+                        <input type="email" id="email" name="email" class="w-full p-3 border border-gray-300 rounded-md" required>
+                    </div>
+                    <div class="mb-4">
+                        <label for="message" class="block text-gray-700 font-semibold mb-2">Mensaje</label>
+                        <textarea id="message" name="message" rows="4" class="w-full p-3 border border-gray-300 rounded-md" required></textarea>
+                    </div>
+                    <button type="submit" class="w-full bg-primary text-white font-bold py-3 px-6 rounded-md hover:bg-opacity-90 transition">Enviar Mensaje</button>
+                </form>
+                <div id="form-message" class="mt-4 text-center"></div>
+            </div>
+        </div>
+    </div>
+</section>
 
     <footer class="bg-gray-800 text-white py-8">
         <div class="container mx-auto px-6 text-center">
